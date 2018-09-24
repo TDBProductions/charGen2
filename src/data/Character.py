@@ -38,6 +38,7 @@ class Character:
     read = 0
 
     weapons = []
+    ammo = []
     armor = None
 
     def __init__(self):

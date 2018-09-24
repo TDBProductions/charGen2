@@ -45,6 +45,7 @@ class ItemImporter:
                     itemWeaponLink = itemElement.attrib['weapon']
 
                 itemList.append(Item())
+                itemList[index].itemCategory = itemCategory
                 itemList[index].itemName = itemName
                 itemList[index].itemCost = itemCost
                 itemList[index].itemCostStr = itemCostStr

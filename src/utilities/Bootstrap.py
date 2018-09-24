@@ -3,15 +3,18 @@ from test.ImporterTest import ImporterTest
 from data.GameData import GameData
 from utilities.CharacterGenerator import CharacterGenerator
 
+#from utilities.HtmlFactory import HtmlFactory
+
 class Bootstrap(object):
     """Used to bootstrap the application and maintain program flow."""
  
     gameData = None
 
-    def __init__(self):
+    def __init__(self): 
         self.printOpeningMessage()
         self.importGameData()        
         characters = CharacterGenerator(self.gameData)
+        HtmlFactory(characters)
         
     def printOpeningMessage(self):
         print("Welcome to the Die in a Dungeon Standalone Character Generator!\n")

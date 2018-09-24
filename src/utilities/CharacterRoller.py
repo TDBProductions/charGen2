@@ -1,6 +1,4 @@
 from utilities.DiceRoller import DiceRoller
-from utilities.AbilitiesRoller import AbilitiesRoller
-from utilities.RaceRoller import RaceRoller
 from data.Character import Character
 import random
 
@@ -144,6 +142,9 @@ class CharacterRoller(object):
         print("Weapons:")
         for i in character.weapons:
             print("\t" + i.weaponName)
+        #character.ammo = self.ammoSelection(character)
+        #for i in characters.ammo:
+        #    print("\t" + str(i[0]) + "( " + str(i[1]) + " )")
 
         # Determine armor
         character.armor = self.armorSelection(character)
@@ -156,6 +157,11 @@ class CharacterRoller(object):
             character.ac = int(character.ac) + int(character.shield.ac)
         print("Ac: " + str(character.ac))
 
+        # Determine items
+        character.items = self.itemSelection(character)
+        print("Items:")
+        for item in character.items:
+            print("\t" + item.itemName)
         print("\n\n\n")
 
         return character
@@ -685,8 +691,7 @@ class CharacterRoller(object):
             if skill > 100:
                 thiefSkillArray[index] = 100
             index += 1
-        return thiefSkillArray
-        
+        return thiefSkillArray     
 
     def weaponSelection(self, character):
         # Declarations
@@ -734,8 +739,17 @@ class CharacterRoller(object):
                 eligibleWeaponsList = []
             # Reset roll flag
             rollFlag = False
+
         # Return list of weapons
         return weaponsList
+
+    #def ammoSelection(self, character):
+        # If we have a ranged weapon, we need to get the ammo for it.
+        # Declarations
+    #    weaponsList = character.weaponsList
+    #    ammoList = []
+
+        return ammoList
 
     def goldSelection(self, character):
         goldDice = character.charClass.startingGold
@@ -746,11 +760,36 @@ class CharacterRoller(object):
         eligibleArmors = character.charClass.armors.copy()
         if "Shields" in eligibleArmors:
             eligibleArmors.remove("Shields")
-        return random.choice(self.gameData.getArmorListByString(random.choice(eligibleArmors)))
-        
+        return random.choice(self.gameData.getArmorListByString(random.choice(eligibleArmors)))      
 
     def shieldSelection(self, character):
         eligibleArmors = character.charClass.armors.copy()
         if "Shields" in eligibleArmors:
             return random.choice(self.gameData.getArmorListByString("Shields"))
         return None
+
+    def itemSelection(self, character):
+        # Declarations
+        itemData = self.gameData.items
+        eligibleItemsCategories = []
+        eligibleItemsList = []
+        itemsList = []
+        
+        # We want a reference list for item categories
+        for item in itemData:
+            if item.itemCategory not in eligibleItemsCategories:
+                eligibleItemsCategories.append(item.itemCategory)       
+                eligibleItemsList.append([])     
+
+        # We want to append items of that category into a matching slot of the list
+        for item in itemData:
+            eligibleItemsList[eligibleItemsCategories.index(item.itemCategory)].append(item)
+            
+        # This gives us a list of items broken down by item category.
+        # for now we are just going to roll 1-3 miscellaneous
+        amountOfItems = DiceRoller.rollDice("1d3")
+
+        for i in range(0,amountOfItems):
+            itemsList.append(random.choice(eligibleItemsList[eligibleItemsCategories.index("Miscellaneous")]))
+
+        return itemsList

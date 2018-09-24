@@ -105,13 +105,10 @@
     <Compile Include="src\utilities\CharacterRoller.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\utilities\AbilitiesRoller.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="src\utilities\DiceRoller.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\utilities\RaceRoller.py">
+    <Compile Include="src\utilities\HtmlFactory.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\utilities\__init__.py">
@@ -130,7 +127,7 @@
     <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\html\WebPage1.html" />
+    <Content Include="src\html\test.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

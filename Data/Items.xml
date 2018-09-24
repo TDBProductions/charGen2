@@ -1,84 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <items>
-	<!-- Armor is listed with its name to link it to the armor file -->
-	<category name="Armor">
-		<item name="Banded Armor" cost="90" coststr="90 g.p."></item>
-		<item name="Chain Armor" cost="75" coststr="75 g.p."></item>
-		<item name="Helmet, Great" cost="15" coststr="15 g.p."></item>
-		<item name="Helmet, Small" cost="10" coststr="10 g.p."></item>
-		<item name="Leather" cost="5" coststr="5 g.p."></item>
-		<item name="Padded" cost="4" coststr="4 g.p."></item>
-		<item name="Plate Armor" cost="400" coststr="400 g.p."></item>
-		<item name="Ring Armor" cost="30" coststr="30 g.p."></item>
-		<item name="Scale Armor" cost="45" coststr="45 g.p."></item>
-		<item name="Shield, Large" cost="15" coststr="15 g.p."></item>
-		<item name="Shield, Small" cost="10" coststr="10 g.p."></item>
-		<item name="Shield, Small, Wooden" cost="1" coststr="1 g.p."></item>
-		<item name="Splinted Armor" cost="80" coststr="80 g.p."></item>
-		<item name="Studded Armor" cost="15" coststr="15 g.p."></item>
-	</category>
-	
-	<!-- Arms are listed with their string name, their armstype (ammo, one hand, two hand, range), their cost, and a string formatted cost as it appears in the PHB
-			Some weapons have a "weapon" tag.  This is used to relate items with a different weapon name from their entry in the weapons table.
-			If an item does not have a "weapon" tag, the item name is as it appears in the weapons table -->
-	<category name="Arms">
-		<item name="Arrow, Silver, Single" weapon="Arrow"  cost="0.1" coststr="2 s.p."></item>
-		<item name="Arrow, Normal, Dozen" weapon="Arrow"  cost="1" coststr="1 g.p."></item>
-		<item name="Axe, Battle" cost="5"  coststr="5 g.p."></item>
-		<item name="Axe, Hand or Throwing" weapon="Axe, Hand"  cost="1" coststr="1 g.p."></item>
-		<item name="Bardiche"  cost="7" coststr="7 g.p."></item>
-		<item name="Bec de corbin"  cost="6" coststr="6 g.p."></item>
-		<item name="Bill-Guisarme"  cost="6" coststr="6 g.p."></item>
-		<item name="Bo Stick" cost="3" coststr="3 g.p."></item>
-		<item name="Bow, Composite, Short"  cost="75" coststr="75 g.p."></item>
-		<item name="Bow, Composite, Long"  cost="100" coststr="100 g.p."></item>
-		<item name="Bow, Long" cost="60"  coststr="60 g.p."></item>
-		<item name="Bow, Short" cost="15"  coststr="15 g.p."></item>
-		<item name="Club"  cost="2" coststr="2 g.p."></item>
-		<item name="Crossbow, Heavy"  cost="20" coststr="20 g.p."></item>
-		<item name="Crossbow, Light"  cost="12" coststr="12 g.p."></item>
-		<item name="Dagger and Scabbard" weapon="Dagger"  cost="2" coststr="2 g.p."></item>
-		<item name="Dart"  cost=".25"  coststr="5 s.p."></item>
-		<item name="Fauchard"  cost="3" coststr="3 g.p."></item>
-		<item name="Fauchard - Fork"  cost="8" coststr="8 g.p."></item>
-		<item name="Flail, Footman's"  cost="3" coststr="3 g.p."></item>
-		<item name="Flail, Horseman's"  cost="8" coststr="8 g.p."></item>
-		<item name="Fork, Military"  cost="4" coststr="4 g.p."></item>
-		<item name="Glaive"  cost="6" coststr="6 g.p."></item>
-		<item name="Glaive-Guisarme"  cost="10" coststr="10 g.p."></item>
-		<item name="Guisarme"  cost="5" coststr="5 g.p."></item>
-		<item name="Guisarme - Voulge"  cost="7" coststr="7 g.p."></item>
-		<item name="Halberd"  cost="9" coststr="9 g.p."></item>
-		<item name="Hammer, Lucern"  cost="7" coststr="7 g.p."></item>
-		<item name="Hammer"  cost="1" coststr="1 g.p."></item>
-		<item name="Javelin"  cost=".5" coststr="10 s.p."></item>
-		<item name="Jo Stick" cost="2" coststr="2 g.p."></item>
-		<item name="Lance"  cost="6" coststr="6 g.p."></item>
-		<item name="Mace, Footman's"  cost="8" coststr="8 g.p."></item>
-		<item name="Mace, Horseman's"  cost="4" coststr="4 g.p."></item>
-		<item name="Morning Star"  cost="5" coststr="5 g.p."></item>
-		<item name="Partisan"  cost="10" coststr="10 g.p."></item>
-		<item name="Pick, Military, Footman's"  cost="8" coststr="8 g.p."></item>
-		<item name="Pick, Military, Horseman's"  cost="5" coststr="5 g.p."></item>
-		<item name="Pike, awl"  cost="3" coststr="3 g.p."></item>
-		<item name="Quarrel (or Bolt), light, single" weapon="Bolt"  cost="0.05" coststr="1 s.p."></item>
-		<item name="Quarrel (or Bolt), heavy, score" weapon="Bolt"  cost="2" coststr="2 g.p."></item>
-		<item name="Ranseur"  cost="4" coststr="4 g.p."></item>
-		<item name="Scimitar"  cost="15" coststr="15 g.p."></item>
-		<item name="Sling and Bullets, dozen" weapon="Sling, Bullets"  cost=".75" coststr="15 s.p."></item>
-		<item name="Sling Bullets, score" weapon="Sling, Bullets"  cost=".5" coststr="10 s.p."></item>
-		<item name="Spear"  cost="1" coststr="1 g.p."></item>
-		<item name="Spetum"  cost="3" coststr="3 g.p."></item>
-		<item name="Staff, Quarter" cost="2" coststr="2 g.p"></item>
-		<item name="Sword, Bastard, and Scabbard" weapon="Sword, Bastard" cost="25" coststr="25 g.p."></item>
-		<item name="Sword, Broad, and Scabbard" weapon="Sword, Broad" cost="10" coststr="10 g.p."></item>
-		<item name="Sword, Long, and Scabbard" weapon="Sword, Long" cost="15" coststr="15 g.p."></item>
-		<item name="Sword, Short, and Scabbard" weapon="Sword, Short" cost="8" coststr="8 g.p."></item>
-		<item name="Sword, Two-Handed"  cost="30" coststr="30 g.p."></item>
-		<item name="Trident"  cost="4" coststr="4 g.p."></item>
-		<item name="Voulge"  cost="2" coststr="2 g.p."></item>
-	</category>
-	
 	<category name="Clothing">
 		<item name="Belt" cost=".15" coststr="3 s.p."></item>
 		<item name="Boots, high, hard" cost="2" coststr="2 g.p."></item>
@@ -97,6 +18,7 @@
 		<item name="Belladona, sprig" cost=".2" coststr="4 s.p."></item>
 		<item name="Garlic, bud" cost=".025" coststr="5 c.p."></item>
 		<item name="Wolvesbane, sprig" cost=".5" coststr="10 s.p."></item>
+		<item name="Mistletoe, sprig" cost=".5" coststr="10 s.p."></item>
 	</category>
 	
 	<category name="Miscellaneous">
@@ -117,16 +39,16 @@
 		<item name="Pole, 10'" cost=".015" coststr="3 c.p."></item>
 		<item name="Pouch, belt, large" cost="1" coststr="1 g.p."></item>
 		<item name="Pouch, belt, small" cost=".75" coststr="15 s.p."></item>
-		<item name="Quiver, 1doz. arrows cap" cost=".25" coststr="8 s.p."></item>
+		<!--<item name="Quiver, 1doz. arrows cap" cost=".25" coststr="8 s.p."></item>
 		<item name="Quiver, 1 score arrows cap" cost=".6" coststr="12 s.p."></item>
 		<item name="Quiver, 1 score bolts cap" cost=".75" coststr="15 s.p."></item>
-		<item name="Quiver, 2 score bolts cap" cost="1" coststr="1 g.p."></item>
+		<item name="Quiver, 2 score bolts cap" cost="1" coststr="1 g.p."></item>-->
 		<item name="Rope, 50'" cost=".2" coststr="4 s.p."></item>
 		<item name="Sack, Large" cost=".08" coststr="16 c.p."></item>
 		<item name="Sack, Small" cost=".05" coststr="10 c.p."></item>
 		<item name="Waterskin" cost=".75" coststr="15 s.p."></item>
 		<item name="Spike, Iron, Large" cost=".005" coststr="1 c.p."></item>
-		<item name="Thieves' picks and tools" cost="30" coststr="30 g.p."></item>
+		<!--<item name="Thieves' picks and tools" cost="30" coststr="30 g.p."></item>-->
 		<item name="Tinder Box" cost="1" coststr="1 g.p."></item>
 		<item name="Torch" cost=".005" coststr="1 c.p."></item>
 	</category>
