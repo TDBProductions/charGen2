@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<race name="Human">
+	<abilitycaps>
+		<abilitycapsmale>
+			<ability name="Strength" min="3" max="18"></ability>
+			<ability name="Intelligence" min="3" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="3" max="18"></ability>
+			<ability name="Constitution" min="3" max="18"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsmale>
+		
+		<abilitycapsfemale>
+			<ability name="Strength" min="3" max="18"></ability>
+			<ability name="Intelligence" min="3" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="3" max="18"></ability>
+			<ability name="Constitution" min="3" max="18"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsfemale>
+	</abilitycaps>
+	
+	<abilitybonus>
+		<ability name="Strength" value="1"></ability>
+		<ability name="Constitution" value="1"></ability>
+		<ability name="Charisma" value="-2"></ability>
+	</abilitybonus>
+		
+	<racefeatures>
+		<feature name="Infravision" description="See up to 60' in darkness"></feature>
+		<feature name="Nonlinguistic" description="Unable to learn more than two additional languages">
+			<affectedStat name="Language">
+				<condition effect="SetCap" value="2"></condition>
+			</affectedStat>
+			</feature>
+	</racefeatures>
+	
+	<languages>
+		<language name="Orcish"></language>
+		<language name="Common"></language>
+	</languages>
+	
+	<mheight value="72" minus="1d12" plus="1d12" oweight="81" uweight="20"></mheight>
+	<mweight value="175" minus="3d12" plus="5d12" oweight="76" uweight="25"></mweight>
+	<fheight value="66" minus="1d6" plus="1d8" oweight="81" uweight="20"></fheight>
+	<fweight value="130" minus="3d10" plus="4d12" oweight="76" uweight="25"></fweight>
+	
+	<racialsavebonus>
+	</racialsavebonus>
+	
+	<racialthiefbonus>
+	</racialthiefbonus>
+</race>

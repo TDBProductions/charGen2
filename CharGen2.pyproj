@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>558e748e-0b6c-4ba9-aae1-416b8e3ee6d0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\CharGen2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CharGen2</Name>
+    <RootNamespace>CharGen2</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\CharGen2.py" />
+    <Compile Include="src\data\Armor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\Character.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\Feature.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\Item.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\PlayerRace.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\PlayerClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\Spell.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\ThiefSkills.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\Weapon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\ArmorImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\data\GameData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\StatAdjustmentImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\ItemImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\SpellImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\ThiefSkillImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\WeaponsImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\RaceImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\ClassImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\importers\GameOptionsImporter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\test\CharacterTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\test\ImporterTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\test\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\Bootstrap.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\CharacterGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\CharacterRoller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\AbilitiesRoller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\DiceRoller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\RaceRoller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\utilities\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\importers\" />
+    <Folder Include="src\data\" />
+    <Folder Include="src\html\" />
+    <Folder Include="src\test\" />
+    <Folder Include="src\utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\html\WebPage1.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

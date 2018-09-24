@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<class name="Magic-User">
+	<!-- Class definitions follow the procedure of generating a character. -->
+	<!-- Note that when dice are involved we use the following convention: xdy
+			where x is the number of dice rolled
+			where y is the value of the dice rolled
+			for example, 1d4 rolls a D4 dice once.
+						 2d8 rolles a D8 dice twice. -->
+						 
+	<!-- Class type, used in determining class appearance in the generator -->
+	<classtype value="Basic"></classtype>
+	<!-- Floor value for appearing in the generator -->
+	<floorval value="1"></floorval>
+	
+	<!-- In AD&D, classes have prequisites.  First we set those requirements -->
+	<requirements>
+		<requirement name="Intelligence" value="9"></requirement>
+		<requirement name="Dexterity" value="6"></requirement>
+	</requirements>
+	
+	<!-- Hit Dice determine the HP of character, both at the start and as they level.  These follow the rules from the AD&D book. -->
+	<!-- Intial hit dice determines the HP at level 1, while level hit dice determines the dice rolled upon leveling. -->
+	<hitdice>
+		<initialhitdice value="1d4"></initialhitdice>
+		<levelhitdice value="1d4"></levelhitdice>
+	</hitdice>
+	
+	<races>
+		<race name="Elf"></race>
+		<race name="Half-Elf"></race>
+		<race name="Human"></race>
+	</races>
+	
+	<armors>
+		<armor name="Wizard Armor"></armor>
+	</armors>
+	
+	<features>
+		<feature name="Student of the Occult" description="You are a STUDENT of the OCCULT and ARCANE, and can cast magic spells"></feature>
+	</features>
+	
+	<alignments>
+		<alignment name="Chaotic Good"></alignment>
+		<alignment name="Neutral Good"></alignment>
+		<alignment name="Lawful Good"></alignment>
+		
+		<alignment name="Chaotic Neutral"></alignment>
+		<alignment name="True Neutral"></alignment>
+		<alignment name="Lawful Neutral"></alignment>
+		
+		<alignment name="Chaotic Evil"></alignment>
+		<alignment name="Neutral Evil"></alignment>
+		<alignment name="Lawful Evil"></alignment>
+	</alignments>
+
+	<saves>
+		<save name="Poison" value="14"></save>
+		<save name="Petrification" value="13"></save>
+		<save name="Wand" value="11"></save>
+		<save name="Breath" value ="15"></save>
+		<save name="Spell" value="12"></save>
+	</saves>
+	
+	<startinggold value="5d4"></startinggold>
+	
+	<spells class="Magic-User">
+		<spell name="Level 1" value="2"></spell>
+		<spell name="Level 2" value="1"></spell>
+	</spells>
+	
+	<weapons>
+		<weapon type="required" ortag="onehand" nottag="sword polearm axe"></weapon>
+	</weapons>
+	
+	<thief value="false"></thief>
+	
+</class>

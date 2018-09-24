@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<race name="Half-Orc">
+	<abilitycaps>
+		<abilitycapsmale>
+			<ability name="Strength" min="6" max="18"></ability>
+			<ability name="Intelligence" min="3" max="17"></ability>
+			<ability name="Wisdom" min="3" max="14"></ability>
+			<ability name="Dexterity" min="3" max="17"></ability>
+			<ability name="Constitution" min="13" max="19"></ability>
+			<ability name="Charisma" min="3" max="12"></ability>
+		</abilitycapsmale>
+		
+		<abilitycapsfemale>
+			<ability name="Strength" min="6" max="18"></ability>
+			<ability name="Intelligence" min="3" max="17"></ability>
+			<ability name="Wisdom" min="3" max="14"></ability>
+			<ability name="Dexterity" min="3" max="17"></ability>
+			<ability name="Constitution" min="13" max="19"></ability>
+			<ability name="Charisma" min="3" max="12"></ability>
+		</abilitycapsfemale>
+	</abilitycaps>
+	
+	<abilitybonus>
+		<ability name="Strength" value="1"></ability>
+		<ability name="Constitution" value="1"></ability>
+		<ability name="Charisma" value="-2"></ability>
+	</abilitybonus>
+		
+	<racefeatures>
+		<feature name="Infravision" description="See up to 60' in darkness"></feature>
+		<feature name="Nonlinguistic" description="Unable to learn more than two additional languages">
+			<affectedStat name="Language">
+				<condition effect="SetCap" value="2"></condition>
+			</affectedStat>
+			</feature>
+	</racefeatures>
+	
+	<languages>
+		<language name="Orcish"></language>
+		<language name="Common"></language>
+	</languages>
+	
+	<mheight value="66" minus="1d4" plus="1d4" oweight="76" uweight="45"></mheight>
+	<mweight value="150" minus="2d8" plus="2d20" oweight="56" uweight="30"></mweight>
+	<fheight value="62" minus="1d3" plus="1d3" oweight="76" uweight="45"></fheight>
+	<fweight value="120" minus="3d6" plus="4d8" oweight="56" uweight="30"></fweight>
+	
+	<racialsavebonus>
+	</racialsavebonus>
+	
+	<racialthiefbonus>
+		<stat name="Steal" value="-5"></stat>
+		<stat name="Locks" value="5"></stat>
+		<stat name="Traps" value="5"></stat>
+		<stat name="Listen" value="5"></stat>
+		<stat name="Climb" value="5"></stat>
+		<stat name="Read" value="-10"></stat>
+	</racialthiefbonus>
+</race>

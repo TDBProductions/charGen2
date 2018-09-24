@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- These are pretty hardcoded on the code side of the house, but are recorded here for easy importing.
+ Recommend ya don't touch em' -->
+<statadjustments>
+ <!-- Because this game is terrible to code, STR has a special 'exceptional strength' -->
+	<ability name="Strength">
+		<adjustment name="To-Hit" value="-3 -2 -2 -1 -1 0 0 0 0 0 0 0 0 0 1 1 1 2 2 2 3 4"></adjustment>
+		<adjustment name="Damage" value="-1-1 0 0 0 0 0 0 0 0 0 0 0 1 1 2 3 3 4 5 6 7"></adjustment>
+		<adjustment name="Open Doors" value="1 1 1 1 1 2 2 2 2 2 2 2 2 3 3 3 3 4 4 4 4 5"></adjustment>
+		<adjustment name="BB/LG" value="0 0 0 0 0 1 1 2 2 4 4 7 7 10 13 16 20 25 30 35 40 45"></adjustment>
+	</ability>
+ 
+	<ability name="Dexterity">
+		<adjustment name="AC" value="4 3 2 1 0 0 0 0 0 0 0 0 -1 -2 -3 -4 -5"></adjustment>
+		<!-- thief skills start at 9, so under that is just the base 9 ability
+			Can come up if enforce level is turned OFF --> 
+		<adjustment name="Steal" value="-15 -15 -15 -15 -15 -15 -15 -10 -5 0 0 0 0 0 5 10 15"></adjustment>
+		<adjustment name="Locks" value="-10 -10 -10 -10 -10 -10 -10 -5 0 0 0 0 0 5 10 15 20"></adjustment>
+		<adjustment name="Traps" value="-10 -10 -10 -10 -10 -10 -10 -10 -5 0 0 0 0 0 0 5 10"></adjustment>
+		<adjustment name="Sneak" value="-20 -20 -20 -20 -20 -20 -20 -15 -10 -5 0 0 0 0 5 10 15"></adjustment>
+		<adjustment name="Hide" value="-10 -10 -10 -10 -10 -10 -10 -5 0 0 0 0 0 0 5 10 15"></adjustment>
+	</ability>
+	
+	<ability name="Wisdom">
+		<adjustment name="Spell Save" value="-3 -2 -1 -1 -1 0 0 0 0 0 0 0 1 2 3 4 5"></adjustment>
+	</ability>
+
+	<ability name="Constitution">
+		<adjustment name="Hit Points" value="-2 -1 -1 -1 0 0 0 0 0 0 0 0 1 2 2 2 3"></adjustment>
+	</ability>
+</statadjustments>
