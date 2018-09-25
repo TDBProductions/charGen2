@@ -9,7 +9,7 @@ class PlayerRace:
     abilityCapsMaxMale = None # Dictionary objects { "Ability" : "Val" }
     abilityCapsMaxFemale = None # Dictionary objects { "Ability" : "Val" }
     abilityBonus = None # List of dictionary objects { "Ability" : "Val" }
-    raceFeatures = None # Complex object.  Use the Feature class.
+    features = None # Complex object.  Use the Feature class.
     languages = None # List of strings
     mWeight = None # List of ints / strings
     mHeight = None # List of ints / strings

@@ -23,6 +23,9 @@ class CharacterRoller(object):
             character.sex = "Female"
         print("Sex: " + character.sex)
 
+        # Get name
+        character.charName = "Testie McTestFace"
+
         # Determine class
         character.charClass = self.gameData.getClassByString(classString)
         print("Class: " + character.charClass.className)

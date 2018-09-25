@@ -17,7 +17,8 @@ class HtmlFactory(object):
         #for character in self.characters:
         charHtml = copy.deepcopy(templateHtml)
         charHtml = self.importAbilities(characters[0], charHtml)
-        charHtml = self.importClassRaceSex(characters[0], charHtml)
+        charHtml = self.importClassRaceSexName(characters[0], charHtml)
+        charHtml = self.importClassRaceFeatures(characters[0], charHtml)
         charHtml = self.importHeightWeight(characters[0], charHtml)
         charHtml = self.importDoorsBblgToHitDamage(characters[0], charHtml)
         charHtml = self.importSaves(characters[0], charHtml)
@@ -44,11 +45,18 @@ class HtmlFactory(object):
         templateHtml = BeautifulSoup(templateHtmlString, "html.parser")
         return templateHtml
 
-    def importClassRaceSex(self, character, charHtml):
+    def importClassRaceSexName(self, character, charHtml):
+        # Declarations
+        charName = character.charName
         charClass = character.charClass.className
         charRace = character.charRace.raceName
         charSex = character.sex
 
+        nameTag = charHtml.find("li", {"id": "name"})
+        newNameTag = str(nameTag).replace("Name:", "Name: " + str(charName))
+        nameTag.replaceWith(BeautifulSoup(newNameTag, "html.parser"))
+
+        # Find the class tag placeholder in the template, and replace it with the new value
         classTag = charHtml.find("li", {"id": "class"})
         newClassTag = str(classTag).replace("Class:", "Class: " + str(charClass))
         classTag.replaceWith(BeautifulSoup(newClassTag, "html.parser"))
@@ -62,6 +70,37 @@ class HtmlFactory(object):
         sexTag.replaceWith(BeautifulSoup(newSexTag, "html.parser"))
         
         return charHtml
+
+    def importClassRaceFeatures(self, character, charHtml):
+        classFeatures = character.charClass.features
+        raceFeatures = character.charRace.features
+        counter = 0
+
+        # Loop over all keys in the class feature dictionary
+        for key, value in classFeatures.items():
+            # Create new tag of type "dd"
+            classFeatureTag = charHtml.new_tag("dd")
+            # Set the ID with the counter
+            classFeatureTag['id'] = ("classfeature" + str(counter))
+            # Set the string value with FeatureName: FeatureDesc
+            classFeatureTag.string = key + ": " + classFeatures[key]
+            # Append after the class tag
+            charHtml.find("li",{"id":"class"}).insert_after(classFeatureTag)
+            # Increase counter
+            counter += 1
+
+        counter = 0
+
+        # Race features have other number-affecting components (namely languages) and have to be an object to account for this API for this to be expanded
+        for feature in raceFeatures:
+            raceFeatureTag = charHtml.new_tag("dd")
+            raceFeatureTag['id'] = ("racefeature" + str(counter))
+            raceFeatureTag.string = feature.featureName + ": " + feature.featureDesc
+            charHtml.find("li",{"id":"race"}).insert_after(raceFeatureTag)
+            counter += 1
+
+        return charHtml
+            
 
     def importAbilities(self, character, charHtml):
         #Declarations

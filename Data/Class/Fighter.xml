@@ -40,11 +40,11 @@
 		<armor name="Heavy Armor"></armor>
 		<armor name="Medium Armor"></armor>
 		<armor name="Light Armor"></armor>
-		<armor name="Wizard Armor"></armor>
 		<armor name="Shields"></armor>
 	</armors>
 	
 	<features>
+		<feature name="Nothing Special" description="You are completely ordinary, plain vanilla, no-frills; you have no additional features."></feature>
 	</features>
 	
 	<alignments>

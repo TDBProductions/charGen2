@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\html\template.html" />
+    <Content Include="src\html\TestName.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

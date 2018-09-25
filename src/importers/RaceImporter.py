@@ -85,7 +85,7 @@ class RaceImporter:
                     feature.affectedVal = i[0][0].attrib['value']
 
                 featuresList.append(feature)
-            raceList[index].raceFeatures = featuresList
+            raceList[index].features = featuresList
 
             # Get the languages
             languageList = []

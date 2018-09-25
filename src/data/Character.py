@@ -1,5 +1,6 @@
 class Character:
     """Object used to house the character data"""
+    charName = ""
     sex = None
     abilityArray = []
     saveArray = []

@@ -37,7 +37,6 @@
 	<armors>
 		<armor name="Medium Armor"></armor>
 		<armor name="Light Armor"></armor>
-		<armor name="Wizard Armor"></armor>
 	</armors>
 	
 	<features>
