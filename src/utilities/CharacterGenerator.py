@@ -9,6 +9,9 @@ class CharacterGenerator(object):
 
     def __init__(self, gameData):
         self.gameData = gameData
+
+    def rollCharacters(self):
+        gameData = self.gameData
         self.characterList = []
         
         # Determines the program mode, classic or enhanced
@@ -40,6 +43,7 @@ class CharacterGenerator(object):
             # Randomize the list
             random.shuffle(self.characterList)
 
+        return self.characterList
 
         # True random generation mode 
         if (charGenMode == "random"):

@@ -1,7 +1,7 @@
 class Character:
     """Object used to house the character data"""
     sex = None
-    attributeArray = []
+    abilityArray = []
     saveArray = []
     exceptionalStrengthFlag = False
     exceptionalStrengthVal = 0
@@ -25,6 +25,7 @@ class Character:
     alignment = ""
     hpBonus = 0
     gold = 0
+
     ac = 0
 
     # Thief skills

@@ -1,20 +1,21 @@
 import time
 from test.ImporterTest import ImporterTest
 from data.GameData import GameData
-from utilities.CharacterGenerator import CharacterGenerator
-
-#from utilities.HtmlFactory import HtmlFactory
+from .CharacterGenerator import CharacterGenerator
+from .HtmlFactory import HtmlFactory
 
 class Bootstrap(object):
     """Used to bootstrap the application and maintain program flow."""
  
     gameData = None
+    htmlFactory = None
 
     def __init__(self): 
         self.printOpeningMessage()
-        self.importGameData()        
-        characters = CharacterGenerator(self.gameData)
-        HtmlFactory(characters)
+        self.importGameData()
+        charGenerator = CharacterGenerator(self.gameData)
+        characters = charGenerator.rollCharacters()
+        self.htmlFactory = HtmlFactory(characters)
         
     def printOpeningMessage(self):
         print("Welcome to the Die in a Dungeon Standalone Character Generator!\n")

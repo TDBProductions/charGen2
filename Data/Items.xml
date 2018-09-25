@@ -51,6 +51,7 @@
 		<!--<item name="Thieves' picks and tools" cost="30" coststr="30 g.p."></item>-->
 		<item name="Tinder Box" cost="1" coststr="1 g.p."></item>
 		<item name="Torch" cost=".005" coststr="1 c.p."></item>
+		<item name="Ham, Raw, 1 lb." cost="5" coststr="5 g.p."></item>
 	</category>
 	
 	<category name="Provisions">
