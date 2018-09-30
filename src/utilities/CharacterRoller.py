@@ -515,10 +515,14 @@ class CharacterRoller(object):
                     class2Spells.append(spell)
 
         for i in range(0, int(level1Spells)):
-            charSpells.append(random.choice(class1Spells))
+            # Choose a spell, append it to the spells list, and then remove the spell from the list so it cannot be drawn again
+            spellSelection = random.choice(class1Spells)
+            charSpells.append(spellSelection)
+            class1Spells.remove(spellSelection)
         for i in range(0, int(level2Spells)):
-            charSpells.append(random.choice(class2Spells))
-        
+            spellSelection = random.choice(class2Spells)
+            charSpells.append(spellSelection)
+            class2Spells.remove(spellSelection)
 
         return charSpells
     
