@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<items>
+	<category name="Clothing">
+		<item name="Belt" cost=".15" coststr="3 s.p."></item>
+		<item name="Boots, high, hard" cost="2" coststr="2 g.p."></item>
+		<item name="Boots, high, soft" cost="1" coststr="1 g.p."></item>
+		<item name="Boots, low, hard" cost="1" coststr="1 g.p."></item>
+		<item name="Boots, low, soft" cost=".4" coststr="8 s.p."></item>
+		<item name="Cap" cost=".05" coststr="1 s.p."></item>
+		<item name="Cloak" cost=".25" coststr="5 s.p."></item>
+		<item name="Girdle, broad" cost="2" coststr="2 g.p."></item>
+		<item name="Girdle, normal" cost=".5" coststr="10 s.p."></item>
+		<item name="Hat" cost=".35" coststr="7 s.p."></item>
+		<item name="Robe" cost=".3" coststr="2 s.p."></item>
+	</category>
+	
+	<category name="Herbs">
+		<item name="Belladona, sprig" cost=".2" coststr="4 s.p."></item>
+		<item name="Garlic, bud" cost=".025" coststr="5 c.p."></item>
+		<item name="Wolvesbane, sprig" cost=".5" coststr="10 s.p."></item>
+		<item name="Mistletoe, sprig" cost=".5" coststr="10 s.p."></item>
+	</category>
+	
+	<category name="Miscellaneous">
+		<item name="Backpack, Leather" cost="2" coststr="2 g.p."></item>
+		<item name="Box, Iron, Large" cost="28" coststr="28 g.p."></item>
+		<item name="Box, Iron, Small" cost="9" coststr="9 g.p."></item>
+		<item name="Candle, Tallow" cost=".005" coststr="1 c.p."></item>
+		<item name="Candle, Wax" cost=".05" coststr="1 s.p."></item>
+		<item name="Case, Bone, Map or Scroll" cost="5" coststr="5 g.p."></item>
+		<item name="Case, Leather, Map or Scroll" cost=".75" coststr="15 s.p."></item>
+		<item name="Chest, Wooden, Large" cost=".85" coststr="17 s.p."></item>
+		<item name="Chest, Wooden, Small" cost=".4" coststr="8 s.p."></item>
+		<item name="Lantern, Bullseye" cost="12" coststr="12 g.p."></item>
+		<item name="Lantern, Hooded" cost="7" coststr="7 g.p."></item>
+		<item name="Mirror, Large, Metal" cost="10" coststr="10 g.p."></item>
+		<item name="Mirror, Small, Silver" cost="20" coststr="20 g.p."></item>
+		<item name="Oil, Flask of" cost="1" coststr="1 g.p."></item>
+		<item name="Pole, 10'" cost=".015" coststr="3 c.p."></item>
+		<item name="Pouch, belt, large" cost="1" coststr="1 g.p."></item>
+		<item name="Pouch, belt, small" cost=".75" coststr="15 s.p."></item>
+		<!--<item name="Quiver, 1doz. arrows cap" cost=".25" coststr="8 s.p."></item>
+		<item name="Quiver, 1 score arrows cap" cost=".6" coststr="12 s.p."></item>
+		<item name="Quiver, 1 score bolts cap" cost=".75" coststr="15 s.p."></item>
+		<item name="Quiver, 2 score bolts cap" cost="1" coststr="1 g.p."></item>-->
+		<item name="Rope, 50'" cost=".2" coststr="4 s.p."></item>
+		<item name="Sack, Large" cost=".08" coststr="16 c.p."></item>
+		<item name="Sack, Small" cost=".05" coststr="10 c.p."></item>
+		<item name="Waterskin" cost=".75" coststr="15 s.p."></item>
+		<item name="Spike, Iron, Large" cost=".005" coststr="1 c.p."></item>
+		<!--<item name="Thieves' picks and tools" cost="30" coststr="30 g.p."></item>-->
+		<item name="Tinder Box" cost="1" coststr="1 g.p."></item>
+		<item name="Torch" cost=".005" coststr="1 c.p."></item>
+		<item name="Ham, Raw, 1 lb." cost="5" coststr="5 g.p."></item>
+	</category>
+	
+	<category name="Provisions">
+		<item name="Ale, pint" cost=".05" coststr="1 s.p."></item>
+		<item name="Beer, small, pint" cost=".025" coststr="5 c.p."></item>
+		<item name="Food, merchant's meal" cost=".05" coststr="1 s.p."></item>
+		<item name="Food, rich meal" cost="1" coststr="1 g.p."></item>
+		<item name="Grain, horse meal, 1 day" cost=".05" coststr="1 s.p."></item>
+		<item name="Mead, pint" cost=".25" coststr="5  s.p."></item>
+		<item name="Rations, iron, 1 week" cost="5" coststr="5 g.p."></item>
+		<item name="Rations, standard, 1 week" cost="3" coststr="3 g.p."></item>
+		<item name="Wine, pint, good" cost=".5" coststr="10 s.p."></item>
+		<item name="Wine, pint, watered" cost=".25" coststr="5 s.p."></item>
+	</category>
+	
+	<category name="Religious Items">
+		<item name="Beads, prayer" cost="1" coststr="1 g.p."></item>
+		<item name="Incense, stick" cost="1" coststr="1 g.p."></item>
+		<item name="Symbol, Holy, Iron" cost="2" coststr="2 g.p."></item>
+		<item name="Symbol, Holy, Silver" cost="50" coststr="50 g.p."></item>
+		<item name="Symbol, Holy, Wooden" cost=".35" coststr="7 s.p."></item>
+		<item name="Water, Holy, Vial" cost="25" coststr="25 g.p."></item>
+	</category>
+</items>
+
+		
+		
+		
+		
+		
+		
+		

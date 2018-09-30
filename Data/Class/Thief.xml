@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<class name="Thief">
+	<!-- Class definitions follow the procedure of generating a character. -->
+	<!-- Note that when dice are involved we use the following convention: xdy
+			where x is the number of dice rolled
+			where y is the value of the dice rolled
+			for example, 1d4 rolls a D4 dice once.
+						 2d8 rolles a D8 dice twice. -->
+	
+	<!-- Class type, used in determining class appearance in the generator -->
+	<classtype value="Basic"></classtype>
+	<!-- Floor value for appearing in the generator -->
+	<floorval value="1"></floorval>
+	
+	<!-- In AD&D, classes have prequisites.  First we set those requirements -->
+	<requirements>
+		<requirement name="Dexterity" value="9"></requirement>
+	</requirements>
+	
+	<!-- Hit Dice determine the HP of character, both at the start and as they level.  These follow the rules from the AD&D book. -->
+	<!-- Intial hit dice determines the HP at level 1, while level hit dice determines the dice rolled upon leveling. -->
+	<hitdice>
+		<initialhitdice value="1d6"></initialhitdice>
+		<levelhitdice value="1d6"></levelhitdice>
+	</hitdice>
+	
+	<races>
+		<race name="Dwarf"></race>
+		<race name="Elf"></race>
+		<race name="Gnome"></race>
+		<race name="Half-Elf"></race>
+		<race name="Halfling"></race>
+		<race name="Half-Orc"></race>
+		<race name="Human"></race>
+	</races>
+	
+	<armors>
+		<armor name="Medium Armor"></armor>
+		<armor name="Light Armor"></armor>
+	</armors>
+	
+	<features>
+		<feature name="Better from Behind" description="You deal DOUBLE DAMAGE if an enemy is SURPRISED or you are BEHIND them"></feature>
+		<feature name="Nimble Fingers" description="You have access to the THIEF SKILLS"></feature>
+	</features>
+	<alignments>
+		<alignment name="Neutral Good"></alignment>
+		
+		<alignment name="Chaotic Neutral"></alignment>
+		<alignment name="True Neutral"></alignment>
+		<alignment name="Lawful Neutral"></alignment>
+		
+		<alignment name="Chaotic Evil"></alignment>
+		<alignment name="Neutral Evil"></alignment>
+		<alignment name="Lawful Evil"></alignment>
+	</alignments>
+	
+	<saves>
+		<save name="Poison" value="13"></save>
+		<save name="Petrification" value="12"></save>
+		<save name="Wand" value="14"></save>
+		<save name="Breath" value ="16"></save>
+		<save name="Spell" value="16"></save>
+	</saves>
+
+	<startinggold value="2d6"></startinggold>
+	
+	<spells>
+	</spells>
+	
+	<weapons>
+		<weapon type="required" tag="backstab"></weapon>
+		<weapon type="optional" weight="35" andtag="thrown"></weapon>
+	</weapons>
+	
+	<thief value="true"></thief>
+	
+</class>

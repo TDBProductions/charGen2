@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<class name="Cleric">
+	<!-- Class definitions follow the procedure of generating a character. -->
+	<!-- Note that when dice are involved we use the following convention: xdy
+			where x is the number of dice rolled
+			where y is the value of the dice rolled
+			for example, 1d4 rolls a D4 dice once.
+						 2d8 rolles a D8 dice twice. -->
+
+	<!-- Class type, used in determining class appearance in the generator -->
+	<classtype value="Basic"></classtype>
+	<!-- Floor value for appearing in the generator -->
+	<floorval value="1"></floorval>
+						 
+	<!-- In AD&D, classes have prequisites.  First we set those requirements -->
+	<requirements>
+		<requirement name="Wisdom" value="9"></requirement>
+	</requirements>
+	
+	<!-- Hit Dice determine the HP of character, both at the start and as they level.  These follow the rules from the AD&D book. -->
+	<!-- Intial hit dice determines the HP at level 1, while level hit dice determines the dice rolled upon leveling. -->
+	<hitdice>
+		<initialhitdice value="1d8"></initialhitdice>
+		<levelhitdice value="1d8"></levelhitdice>
+	</hitdice>
+	
+	<!-- Clerics can be of the following races: -->
+	<races>
+		<race name="Half-Elf"></race>
+		<race name="Half-Orc"></race>
+		<race name="Human"></race>
+	</races>
+	
+	<!-- Clerics can wear any armor: -->
+	<armors>
+		<armor name="Heaviest Armor"></armor>
+		<armor name="Heavy Armor"></armor>
+		<armor name="Medium Armor"></armor>
+		<armor name="Light Armor"></armor>
+	</armors>
+	
+	<features>
+		<feature name="Empty Vessel" description="As an EMPTY VESSEL, you can cast divine spells"></feature>
+		<feature name="Weapon Preference: Blunt" description="You cannot used EDGED or PIERCING weapons"></feature>
+		<feature name="Feared by the Undead" description="You can TURN UNDEAD"></feature>
+	</features>
+	
+	<alignments>
+		<alignment name="Chaotic Good"></alignment>
+		<alignment name="Neutral Good"></alignment>
+		<alignment name="Lawful Good"></alignment>
+		
+		<alignment name="Chaotic Neutral"></alignment>
+		<alignment name="Lawful Neutral"></alignment>
+		
+		<alignment name="Chaotic Evil"></alignment>
+		<alignment name="Neutral Evil"></alignment>
+		<alignment name="Lawful Evil"></alignment>
+	</alignments>
+	
+	<saves>
+		<save name="Poison" value="10"></save>
+		<save name="Petrification" value="13"></save>
+		<save name="Wand" value="14"></save>
+		<save name="Breath" value ="16"></save>
+		<save name="Spell" value="15"></save>
+	</saves>
+	
+	<startinggold value="3d6"></startinggold>
+	
+	<!-- determines spell level -->
+	<spells class="Cleric">
+		<spell name="Level 1" value="2"></spell>
+		<spell name="Level 2" value="1"></spell>
+	</spells>
+	
+	<weapons>
+		<weapon type="required" tag="cleric"></weapon>
+	</weapons>
+	
+	<thief value="false"></thief>
+</class>
+	
+	

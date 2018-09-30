@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Spells are listed by name and by class.  Descriptions for the spells are below, as multiple classes can use some spells and this prevents duplication. -->
+<spells>
+	<spellclass name="Cleric">
+		<spelllevel level="1">
+			<spell name="Bless"></spell>
+			<spell name="Command"></spell>
+			<spell name="Create Water"></spell>
+			<spell name="Cure Light Wounds"></spell>
+			<spell name="Detect Evil"></spell>
+			<spell name="Detect Magic"></spell>
+			<spell name="Light"></spell>
+			<spell name="Protection from Evil"></spell>
+			<spell name="Purify Food and Water"></spell>
+			<spell name="Remove Fear"></spell>
+			<spell name="Resist Cold"></spell>
+			<spell name="Sanctuary"></spell>
+		</spelllevel>
+		
+		<spelllevel level="2">
+			<spell name="Augury"></spell>
+			<spell name="Chant"></spell>
+			<spell name="Detect Charm"></spell>
+			<spell name="Find Traps"></spell>
+			<spell name="Hold Person"></spell>
+			<spell name="Know Alignment"></spell>
+			<spell name="Resist Fire"></spell>
+			<spell name="Silence 15' Radius"></spell>
+			<spell name="Slow Poison"></spell>
+			<spell name="Snake Charm"></spell>
+			<spell name="Speak With Animals"></spell>
+			<spell name="Spiritual Hammer"></spell>
+		</spelllevel>
+	</spellclass>
+	
+	<spellclass name="Druid">
+		<spelllevel level="1">
+			<spell name="Animal Friendship"></spell>
+			<spell name="Detect Magic"></spell>
+			<spell name="Detect Snares and Pits"></spell>
+			<spell name="Entangle"></spell>
+			<spell name="Faerie Fire"></spell>
+			<spell name="Invisibility To Animals"></spell>
+			<spell name="Locate Animals"></spell>
+			<spell name="Pass Without Trace"></spell>
+			<spell name="Predict Weather"></spell>
+			<spell name="Purify Water"></spell>
+			<spell name="Shillelaugh"></spell>
+			<spell name="Speak With Animals"></spell>
+		</spelllevel>
+		
+		<spelllevel level="2">
+			<spell name="Barkskin"></spell>
+			<spell name="Charm Person or Mammal"></spell>
+			<spell name="Create Water"></spell>
+			<spell name="Cure Light Wounds"></spell>
+			<spell name="Feign Death"></spell>
+			<spell name="Fire Trap"></spell>
+			<spell name="Heat Metal"></spell>
+			<spell name="Locate Plants"></spell>
+			<spell name="Obscurement"></spell>
+			<spell name="Produce Flame"></spell>
+			<spell name="Trip"></spell>
+			<spell name="Warp Wood"></spell>
+		</spelllevel>
+	</spellclass>
+	
+	<spellclass name="Magic-User">
+		<spelllevel level="1">
+			<spell name="Affect Normal Fires"></spell>
+			<spell name="Burning Hands"></spell>
+			<spell name="Charm Person "></spell>
+			<spell name="Comprehend Languages"></spell>
+			<spell name="Dancing Lights"></spell>
+			<spell name="Detect Magic"></spell>
+			<spell name="Enlarge"></spell>
+			<spell name="Erase"></spell>
+			<spell name="Feather Fall"></spell>
+			<spell name="Find Familiar"></spell>
+			<spell name="Friends"></spell>
+			<spell name="Hold Portal"></spell>
+			<spell name="Identify"></spell>
+			<spell name="Jump"></spell>
+			<spell name="Light"></spell>
+			<spell name="Magic Missle"></spell>
+			<spell name="Mending"></spell>
+			<spell name="Message"></spell>
+			<spell name="Nystul's Magic Aura"></spell>
+			<spell name="Protection From Evil"></spell>
+			<spell name="Push"></spell>
+			<spell name="Read Magic"></spell>
+			<spell name="Shield"></spell>
+			<spell name="Shocking Grasp"></spell>
+			<spell name="Sleep"></spell>
+			<spell name="Spider Climb"></spell>
+			<spell name="Tenser's Floating Disc"></spell>
+			<spell name="Unseen Servant"></spell>
+			<spell name="Ventriloquism"></spell>
+			<spell name="Write"></spell>
+		</spelllevel>
+		
+		<spelllevel level="2">
+			<spell name="Audible Glamer"></spell>
+			<spell name="Continual Light"></spell>
+			<spell name="Darkness 15' Radius"></spell>
+			<spell name="Detect Evil"></spell>
+			<spell name="Detect Invisiblity"></spell>
+			<spell name="ESP"></spell>
+			<spell name="Fools Gold"></spell>
+			<spell name="Forget"></spell>
+			<spell name="Invisibility"></spell>
+			<spell name="Knock"></spell>
+			<spell name="Leomund's Trap"></spell>
+			<spell name="Levitate"></spell>
+			<spell name="Locate Object"></spell>
+			<spell name="Magic Mouth"></spell>
+			<spell name="Mirror Image"></spell>
+			<spell name="Pyrotechnics"></spell>
+			<spell name="Ray Of Enfeeblement"></spell>
+			<spell name="Rope Trick"></spell>
+			<spell name="Scare"></spell>
+			<spell name="Shatter"></spell>
+			<spell name="Stinking Cloud"></spell>
+			<spell name="Strength"></spell>
+			<spell name="Web"></spell>
+			<spell name="Wizard Lock"></spell>
+		</spelllevel>
+	</spellclass>
+	
+	<spellclass name="Illusionist">
+		<spelllevel level="1">
+			<spell name="Audible Glamer"></spell>
+			<spell name="Change Self"></spell>
+			<spell name="Color Spray"></spell>
+			<spell name="Dancing Lights"></spell>
+			<spell name="Darkness"></spell>
+			<spell name="Detect Illusion"></spell>
+			<spell name="Detect Invisibility"></spell>
+			<spell name="Gaze Reflection"></spell>
+			<spell name="Hypnotism"></spell>
+			<spell name="Light"></spell>
+			<spell name="Phantasmal Force"></spell>
+			<spell name="Wall Of Fog"></spell>
+		</spelllevel>
+		
+		<spelllevel level="2">
+			<spell name="Blindess"></spell>
+			<spell name="Blur"></spell>
+			<spell name="Deafness"></spell>
+			<spell name="Detect Magic"></spell>
+			<spell name="Fog Cloud"></spell>
+			<spell name="Hypnotic Pattern"></spell>
+			<spell name="Improved Phantasmal Force"></spell>
+			<spell name="Invisibility"></spell>
+			<spell name="Magic Mouth"></spell>
+			<spell name="Mirror Image"></spell>
+			<spell name="Misdirection"></spell>
+			<spell name="Ventriloquism"></spell>
+		</spelllevel>
+	</spellclass>
+	
+	<spelldescriptions>
+		<!-- Cleric Level 1 -->
+		<spell name="Bless">
+			<desc value="Raise (or lower) the Morale and To-Hit of friendly (hostile) creatures by +1 for 6 rounds">
+			</desc>
+		</spell>
+		
+		<spell name="Command">
+			<desc value="Issue a command of a single word to a target">
+			</desc>
+		</spell>
+		
+		<spell name="Create Water">
+			<desc value="Create (or destroy) four gallons of water">
+			</desc>
+		</spell>
+		
+		<spell name="Cure Light Wounds">
+			<desc value="Lay your hands upon a creature to heal (or damage) 1d8 HP">
+			</desc>
+		</spell>
+		
+		<spell name="Detect Evil">
+			<desc value="Detect unholy emanations up to 60' in the direction you are facing for 2 rounds">
+			</desc>
+		</spell>
+		
+		<spell name="Detect Magic">
+			<desc value="Detect magic up to 60' in the direction you are facing for 2 rounds">
+			</desc>
+		</spell>
+		
+		<spell name="Light">
+			<desc value="Touch an object to cause it to emit light (or darkness) akin to a torch for 8 turns (or 4 turns)">
+			</desc>
+		</spell>
+		
+		<spell name="Protection from Evil">
+			<desc value="Touch a creature to protect it from evil (or good) for 3 rounds [-2 To-Hit, +2 Saves]">
+			</desc>
+		</spell>
+		
+		<spell name="Purify Food and Water">
+			<desc value="Cast upon food or water to purify poison or pollution (or putrify)">
+			</desc>
+		</spell>
+		
+		<spell name="Remove Fear">
+			<desc value="Touch a creature to remove / protect against Fear (or cause Fear)">
+			</desc>
+		</spell>
+		
+		<spell name="Resist Cold">
+			<desc value="Touch a creature to protect against cold [+3 Saves]">
+			</desc>
+		</spell>
+		
+		<spell name="Sanctuary">
+			<desc value="Cast upon self to protect against attacks [Opponent must make saving throw to attack]">
+			</desc>
+		</spell>
+		<!-- Cleric Level 2 -->
+		<spell name="Augury">
+			<desc value="Cast to divine whether an action in the next 3 turns will be benefitial or harmful">
+			</desc>
+		</spell>
+		
+		<spell name="Chant">
+			<desc value="Continue chanting to affect attacks, damage and saving throws [+1 to allies, -1 to hostile]">
+			</desc>
+		</spell>
+		
+		<spell name="Detect Charm">
+			<desc value="Cast to detect charm (or shield from detection) on up to 10 creatures (or one creature)">
+			</desc>
+		</spell>
+		
+		<spell name="Find Traps">
+			<desc value="Cast to detect traps in the direction you are facing up to 15'">
+			</desc>
+		</spell>
+		
+		<spell name="Hold Person">
+			<desc value="Cast to hold 1-3 humanoids in place for up to 5 rounds">
+			</desc>
+		</spell>
+		
+		<spell name="Know Alignment">
+			<desc value="Cast to read the alignment (or obscure the reading of alignment) of up to 10 humanoids (or one creature)">
+			</desc>
+		</spell>
+		
+		<spell name="Resist Fire">
+			<desc value="Touch a creature to protect against fire [+3 saves]">
+			</desc>
+		</spell>
+		
+		<spell name="Silence 15' Radius">
+			<desc value="Cast to magically silence a 15' radius sphere">
+			</desc>
+		</spell>
+		
+		<spell name="Slow Poison">
+			<desc value="Touch a creature to slow any poison in them for 1 hour">
+			</desc>
+		</spell>
+		
+		<spell name="Snake Charm">
+			<desc value="Cast to pacify 3 snakes for 3 turns">
+			</desc>
+		</spell>
+		
+		<spell name="Speak With Animals">
+			<desc value="Cast to speak with beasts for 2 rounds">
+			</desc>
+		</spell>
+		
+		<spell name="Spiritual Hammer">
+			<desc value="Cast to summon a spirital hammer that does 1d8 damage">
+			</desc>
+		</spell>
+		<!-- Druid Level 1 -->
+		<spell name="Animal Friendship">
+			<desc value="Cast on an animal to befriend">
+			</desc>
+		</spell>
+		
+		<spell name="Detect Snares and Pits">
+			<desc value="Cast to detect pitfall traps in the direction you are facing up to 15'">
+			</desc>
+		</spell>
+		
+		<spell name="Entangle">
+			<desc value="Cast to create a tangle of plants in a 20' square.  Creatures moving through are slowed by 50%">
+			</desc>
+		</spell>
+		
+		<spell name="Faerie Fire">
+			<desc value="Cast to outline a creature in visible, glowing lines">
+			</desc>
+		</spell>
+		
+		<spell name="Invisibility To Animals">
+			<desc value="Touch to turn target invisible to all animals">
+			</desc>
+		</spell>
+		
+		<spell name="Locate Animals">
+			<desc value="Cast to locate animals in the direction you are facing">
+			</desc>
+		</spell>
+		
+		<spell name="Pass Without Trace">
+			<desc value="Touch to allow target to pass over any terrain without a trace">
+			</desc>
+		</spell>
+		
+		<spell name="Predict Weather">
+			<desc value="Cast to determine the weather in a 9 mile radius for the next two hours">
+			</desc>
+		</spell>
+		
+		<spell name="Purify Water">
+			<desc value="Cast to purify (or putrify) dirty, contaminated water.">
+			</desc>
+		</spell>
+		
+		<spell name="Shillelaugh">
+			<desc value="Cast to turn a wooden club into a magical, +1 weapon that does 2d4 damage.">
+			</desc>
+		</spell>
+		
+	</spelldescriptions>
+</spells>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<class name="Druid">
+	<!-- Class definitions follow the procedure of generating a character. -->
+	<!-- Note that when dice are involved we use the following convention: xdy
+			where x is the number of dice rolled
+			where y is the value of the dice rolled
+			for example, 1d4 rolls a D4 dice once.
+						 2d8 rolles a D8 dice twice. -->
+	
+	<!-- Class type, used in determining class appearance in the generator -->
+	<classtype value="Prestige"></classtype>
+	<!-- Floor value for appearing in the generator -->
+	<floorval value="1"></floorval>
+	
+	<!-- In AD&D, classes have prequisites.  First we set those requirements -->
+	<requirements>
+		<requirement name="Wisdom" value="15"></requirement>
+		<requirement name="Charisma" value="15"></requirement>
+	</requirements>
+
+	<!-- Hit Dice determine the HP of character, both at the start and as they level.  These follow the rules from the AD&D book. -->
+	<!-- Intial hit dice determines the HP at level 1, while level hit dice determines the dice rolled upon leveling. -->
+	<hitdice>
+		<initialhitdice value="1d8"></initialhitdice>
+		<levelhitdice value="1d8"></levelhitdice>
+	</hitdice>
+	
+	<!-- Druids can be either a Half-Elf or a Human -->
+	<races>
+		<race name="Half-Elf"></race>
+		<race name="Human"></race>
+	</races>
+	
+	<!-- Druids cannot use any metallic armor: -->
+	<armors>
+		<armor name="Light Armor"></armor>
+	</armors>
+	
+	<features>
+		<feature name="Keeper of Balance" description="As one ATTUNED TO NATURE, you can cast divine spells"></feature>
+		<feature name="Naturalist" description="You can IDENTIFY plants and animals"></feature>
+		<feature name="Living Armor" description="You cannot wear METAL ARMOR"></feature>
+		<feature name="Well Grounded" description="+2 to FIRE and LIGHTNING SAVING THROW"></feature>
+	</features>
+	
+	<alignments>
+		<alignment name="True Neutral"></alignment>
+	</alignments>
+	
+	<saves>
+		<save name="Poison" value="10"></save>
+		<save name="Petrification" value="13"></save>
+		<save name="Wand" value="14"></save>
+		<save name="Breath" value ="16"></save>
+		<save name="Spell" value="15"></save>
+	</saves>
+	
+	<startinggold value="3d6"></startinggold>
+	
+	<spells class="Druid">
+		<spell name="Level 1" value="2"></spell>
+		<spell name="Level 2" value="1"></spell>
+	</spells>
+	
+	<weapons>
+		<weapon type="required" ortag="onehand twohand"></weapon>
+	</weapons>
+	
+	<thief value="false"></thief>
+</class>

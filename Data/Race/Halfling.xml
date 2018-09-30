@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<race name="Halfling">
+	<abilitycaps>
+		<abilitycapsmale>
+			<ability name="Strength" min="6" max="17"></ability>
+			<ability name="Intelligence" min="6" max="18"></ability>
+			<ability name="Wisdom" min="3" max="17"></ability>
+			<ability name="Dexterity" min="8" max="18"></ability>
+			<ability name="Constitution" min="10" max="19"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsmale>
+		
+		<abilitycapsfemale>
+			<ability name="Strength" min="6" max="14"></ability>
+			<ability name="Intelligence" min="6" max="18"></ability>
+			<ability name="Wisdom" min="3" max="17"></ability>
+			<ability name="Dexterity" min="8" max="18"></ability>
+			<ability name="Constitution" min="10" max="19"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsfemale>
+	</abilitycaps>
+	
+	<abilitybonus>
+		<ability name="Dexterity" value="1"></ability>
+		<ability name="Strength" value="-1"></ability>
+	</abilitybonus>
+		
+	<racefeatures>
+		<feature name="Infravision" description="See up to 60' in darkness"></feature>
+		<feature name="Sense of Direction" description="Ability to detect passage grading and direction"></feature>
+		<feature name="Sneaky" description="Ability to sneak"></feature>
+		<feature name="Linguistic" description="+1 language for every INT point over 16">
+			<affectedStat name="Language">
+				<condition effect="IncreaseCap" value="INT-15"></condition>
+			</affectedStat>
+			</feature>
+	</racefeatures>
+	
+	<languages>
+		<language name="Elvish"></language>
+		<language name="Dwarven"></language>
+		<language name="Gnome"></language>
+		<language name="Halfling"></language>
+		<language name="Orcish"></language>
+		<language name="Common"></language>
+	</languages>
+	
+	<mheight value="36" minus="1d3" plus="1d6" oweight="91" uweight="10"></mheight>
+	<mweight value="50" minus="2d4" plus="2d6" oweight="51" uweight="10"></mweight>
+	<fheight value="33" minus="1d3" plus="1d3" oweight="91" uweight="10"></fheight>
+	<fweight value="50" minus="2d4" plus="2d4" oweight="51" uweight="10"></fweight>
+	
+	<racialsavebonus>
+		<!-- In order to make these fit waaaay better, it is given in an array format from 3-18 -->
+		<save name="Poison" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+		<save name="Wand" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+		<save name="Spell" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+	</racialsavebonus>
+	
+	<racialthiefbonus>
+		<stat name="Steal" value="5"></stat>
+		<stat name="Locks" value="5"></stat>
+		<stat name="Traps" value="5"></stat>
+		<stat name="Sneak" value="10"></stat>
+		<stat name="Hide" value="15"></stat>
+		<stat name="Listen" value="5"></stat>
+		<stat name="Climb" value="-15"></stat>
+		<stat name="Read" value="-5"></stat>
+	</racialthiefbonus>
+</race>

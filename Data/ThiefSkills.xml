@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<thiefskills>
+	<skill name="steal"  value="30"></skill>
+	<skill name="locks"  value="25"></skill>
+	<skill name="traps"  value="20"></skill>
+	<skill name="sneak"  value="15"></skill>
+	<skill name="hide"   value="10"></skill>
+	<skill name="listen" value="10"></skill>
+	<skill name="climb"  value="85"></skill>
+	<skill name="read"   value="5" ></skill>
+</thiefskills>

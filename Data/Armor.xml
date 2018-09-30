@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<armors>
+	<armorclass name="Heaviest Armor">
+		<armor name="Plate Armor" ac="-7">
+			<characteristic name="Heavy"></characteristic>
+			<characteristic name="Loud"></characteristic>
+			<characteristic name="Metallic"></characteristic>
+			<characteristic name="Durable"></characteristic>
+		</armor>
+		
+		<armor name="Splinted Armor" ac="-6">
+			<characteristic name="Heavy"></characteristic>
+			<characteristic name="Loud"></characteristic>
+			<characteristic name="Metallic"></characteristic>
+			<characteristic name="Durable"></characteristic>
+		</armor>
+	</armorclass>
+	
+	<armorclass name="Heavy Armor">
+		<armor name="Banded Armor" ac="-6">
+			<characteristic name="Loud"></characteristic>
+			<characteristic name="Metallic"></characteristic>
+		</armor>
+		
+		<armor name="Chain Mail" ac="-5">
+			<characteristic name="Loud"></characteristic>
+			<characteristic name="Metallic"></characteristic>
+		</armor>
+		
+		<armor name="Scale Mail" ac="-4">
+			<characteristic name="Loud"></characteristic>
+			<characteristic name="Metallic"></characteristic>
+		</armor>
+	</armorclass>
+	
+	<armorclass name="Medium Armor">
+		<armor name="Ring Mail" ac="-3">
+			<characteristic name="Metallic"></characteristic>
+		</armor>
+		
+		<armor name="Studded Leather Armor" ac="-3">
+			<characteristic name="Leather"></characteristic>
+		</armor>
+	</armorclass>
+	
+	<armorclass name="Light Armor">
+		<armor name="Leather Armor" ac="-2">
+			<characteristic name="Leather"></characteristic>
+		</armor>
+		
+		<armor name="Padded Armor" ac="-2">
+			<characteristic name="Cloth"></characteristic>
+			<characteristic name="Light"></characteristic>
+		</armor>
+	</armorclass>
+	
+	<armorclass name="Wizard Armor">
+		<armor name="Wizard Robe" ac="0">
+			<characteristic name="Cloth"></characteristic>
+			<characteristic name="Light"></characteristic>
+			<characteristic name="Quiet"></characteristic>
+			<characteristic name="Magical"></characteristic>
+		</armor>
+	</armorclass>
+	
+	<armorclass name="Shields">
+		<armor name="Shield, Large" ac="-1">
+			<characteristic name="Cumbersome"></characteristic>
+		</armor>
+		<armor name="Shield, Small" ac="-1">
+			<characteristic name="Light"></characteristic>
+		</armor>
+		<armor name="Shield, Small, Wooden" ac="-1">
+			<characteristic name="Light"></characteristic>
+		</armor>
+	</armorclass>
+</armors>

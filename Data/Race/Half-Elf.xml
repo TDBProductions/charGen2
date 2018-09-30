@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<race name="Half-Elf">
+	<abilitycaps>
+		<abilitycapsmale>
+			<ability name="Strength" min="3" max="18"></ability>
+			<ability name="Intelligence" min="4" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="6" max="18"></ability>
+			<ability name="Constitution" min="6" max="18"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsmale>
+		
+		<abilitycapsfemale>
+			<ability name="Strength" min="3" max="17"></ability>
+			<ability name="Intelligence" min="4" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="6" max="18"></ability>
+			<ability name="Constitution" min="6" max="18"></ability>
+			<ability name="Charisma" min="3" max="18"></ability>
+		</abilitycapsfemale>
+	</abilitycaps>
+	
+	<abilitybonus>
+	</abilitybonus>
+		
+	<racefeatures>
+		<feature name="Infravision" description="See up to 60' in darkness"></feature>
+		<feature name="Secret Sense" description="Ability to detect concealed secrets"></feature>
+		<feature name="Strength of Mind" description="30% resistance to Charm and Sleep"></feature>
+		<feature name="Linguistic" description="+1 language for every INT point over 16">
+			<affectedStat name="Language">
+				<condition effect="IncreaseCap" value="INT-15"></condition>
+			</affectedStat>
+			</feature>
+	</racefeatures>
+	
+	<languages>
+		<language name="Elvish"></language>
+		<language name="Gnome"></language>
+		<language name="Halfling"></language>
+		<language name="Goblin"></language>
+		<language name="Hobgoblin"></language>
+		<language name="Orcish"></language>
+		<language name="Gnoll"></language>
+		<language name="Common"></language>
+	</languages>
+	
+	<mheight value="66" minus="1d6" plus="1d6" oweight="91" uweight="35"></mheight>
+	<mweight value="130" minus="1d20" plus="1d20" oweight="86" uweight="20"></mweight>
+	<fheight value="62" minus="1d6" plus="1d6" oweight="91" uweight="35"></fheight>
+	<fweight value="100" minus="1d12" plus="2d8" oweight="86" uweight="20"></fweight>
+	
+	<racialsavebonus>
+	</racialsavebonus>
+	
+	<racialthiefbonus>
+		<stat name="Steal" value="10"></stat>
+		<stat name="Hide" value="5"></stat>
+	</racialthiefbonus>
+</race>

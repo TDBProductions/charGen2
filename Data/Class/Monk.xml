@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<class name="Monk">
+	<!-- Class definitions follow the procedure of generating a character. -->
+	<!-- Note that when dice are involved we use the following convention: xdy
+			where x is the number of dice rolled
+			where y is the value of the dice rolled
+			for example, 1d4 rolls a D4 dice once.
+						 2d8 rolles a D8 dice twice. -->
+	
+	<!-- Class type, used in determining class appearance in the generator -->
+	<classtype value="Prestige"></classtype>
+	<!-- Floor value for appearing in the generator -->
+	<floorval value="1"></floorval>
+	
+	<!-- In AD&D, classes have prequisites.  First we set those requirements -->
+	<requirements>
+		<requirement name="Strength" value="15"></requirement>
+		<requirement name="Wisdom" value="15"></requirement>
+		<requirement name="Dexterity" value="15"></requirement>
+		<requirement name="Constitution" value="11"></requirement>
+	</requirements>
+	
+	<!-- Hit Dice determine the HP of character, both at the start and as they level.  These follow the rules from the AD&D book. -->
+	<hitdice>
+		<initialhitdice value="2d4"></initialhitdice>
+		<levelhitdice value="1d4"></levelhitdice>
+	</hitdice>
+	
+	<races>
+		<race name="Dwarf"></race>
+		<race name="Elf"></race>
+		<race name="Gnome"></race>
+		<race name="Half-Elf"></race>
+		<race name="Half-Orc"></race>
+		<race name="Human"></race>
+	</races>
+	
+	<armors>
+		<armor name="Medium Armor"></armor>
+		<armor name="Light Armor"></armor>
+	</armors>
+	
+	<features>
+		<feature name="Stunning Strikes" description="An ATTACK that exceeds the TO-HIT by 5 stuns an enemy for 1d6 rounds"></feature>
+		<feature name="Powerful Strikes" description="Your ATTACKS deal +2 damage"></feature>
+		<feature name="Nimble Fingers" description="You have access to the THIEF SKILLS"></feature>
+	</features>
+	
+	<alignments>
+		<alignment name="Lawful Good"></alignment>
+		<alignment name="Lawful Neutral"></alignment>
+		<alignment name="Lawful Evil"></alignment>
+	</alignments>
+	
+	<saves>
+		<save name="Poison" value="13"></save>
+		<save name="Petrification" value="12"></save>
+		<save name="Wand" value="14"></save>
+		<save name="Breath" value ="16"></save>
+		<save name="Spell" value="16"></save>
+	</saves>
+	
+	<startinggold value="5d4"></startinggold>
+	
+	<spells>
+	</spells>
+	
+	<weapons>
+		<weapon type="required" tag="monk"></weapon>
+	</weapons>
+
+	<thief value="true"></thief>
+	
+</class>

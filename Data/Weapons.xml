@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Weapon tags can be anything, except for the reserved keyword of 'any' -->
+<!-- The only requirement for a weapon to be added to a class for use is that the weapon tag match the tag in the class description -->
+<!-- Ranged weapons are linked to 
+ types through this system ex: Long Bow has the tags "ranged bow", ranged tells the code to search for an ammo of type "bow". -->
+<weapons>
+	<weapon name="Arrow" armstype="missle" damage="1d6" tags="ammobow"></weapon>
+	<weapon name="Axe, Battle" armstype="onehand" damage="1d8" tags="slashing axe onehand"></weapon>
+	<weapon name="Axe, Hand" armstype="thrown" damage="1d6" tags="slashing axe thrown"></weapon>
+	<weapon name="Bardiche" armstype="onehand" damage="2d4" tags="slashing polearm onehand"></weapon>
+	<weapon name="Bec de corbin" armstype="onehand" damage="1d8" tags="piercing polearm onehand"></weapon>
+	<weapon name="Bill-Guisarme" armstype="onehand" damage="2d4" tags="piercing polearm onehand"></weapon>
+	<weapon name="Bo Stick" armstype="onehand" damage="1d6" tags="blunt cleric monk onehand"></weapon>
+	<weapon name="Bolt" armstype="missle" damage="1d4" tags="ammocrossbow"></weapon>
+	<weapon name="Bow, Composite, Short" armstype="bow" damage="" tags="ranged bow"></weapon>
+	<weapon name="Bow, Composite, Long" armstype="bow" damage="" tags="ranged bow"></weapon>
+	<weapon name="Bow, Long" armstype="bow" damage="" tags="ranged bow"></weapon>
+	<weapon name="Bow, Short" armstype="bow" damage="" tags="ranged bow"></weapon>
+	<weapon name="Club" armstype="onehand" damage="1d6" tags="blunt onehand cleric monk"></weapon>
+	<weapon name="Crossbow, Heavy" armstype="bow" damage="" tags="ranged crossbow"></weapon>
+	<weapon name="Crossbow, Light" armstype="bow" damage="" tags="ranged crossbow"></weapon>
+	<weapon name="Dagger" armstype="onehand" damage="1d4" tags="piercing onehand backstab knife"></weapon>
+	<weapon name="Dart" armstype="thrown" damage="1d3" tags="piercing thrown"></weapon>
+	<weapon name="Fauchard" armstype="onehand" damage="1d6" tags="slashing polearm onehand"></weapon>
+	<weapon name="Fauchard - Fork" armstype="onehand" damage="1d8" tags="piercing polearm onehand"></weapon>
+	<weapon name="Flail, Footman's" armstype="onehand" damage="2d4" tags="blunt piercing onehand"></weapon>
+	<weapon name="Flail, Horseman's" armstype="onehand" damage="1d6" tags="blunt piercing onehand"></weapon>
+	<weapon name="Fork, Military" armstype="onehand" damage="1d8" tags="piercing polearm onehand"></weapon>
+	<weapon name="Glaive" armstype="onehand" damage="1d6" tags="slashing polearm onehand"></weapon>
+	<weapon name="Glaive-Guisarme" armstype="onehand" damage="2d4" tags="slashing polearm onehand"></weapon>
+	<weapon name="Guisarme" armstype="onehand" damage="2d4" tags="slashing polearm onehand"></weapon>
+	<weapon name="Guisarme - Voulge" armstype="onehand" damage="2d4" tags="slashing polearm onehand"></weapon>
+	<weapon name="Halberd" armstype="onehand" damage="1d10" tags="piercing slashing polearm onehand"></weapon>
+	<weapon name="Hammer, Lucern" armstype="onehand" damage="2d4" tags="blunt piercing polearm onehand"></weapon>
+	<weapon name="Hammer" armstype="onehand" damage="1d4+1" tags="blunt cleric onehand"></weapon>
+	<weapon name="Hunting Knife" armstype="onehand" damage="1d4+1" tags="piercing onehand backstab knife"></weapon>
+	<weapon name="Javelin" armstype="thrown" damage="1d6" tags="thrown piercing"></weapon>
+	<weapon name="Jo Stick" armstype="onehand" damage="1d6" tags="blunt cleric monk onehand"></weapon>
+	<weapon name="Lance" armstype="onehand" damage="1d6" tags="piercing polearm onehand"></weapon>
+	<weapon name="Mace, Footman's" armstype="onehand" damage="2d4" tags="blunt cleric onehand"></weapon>
+	<weapon name="Mace, Horseman's" armstype="onehand" damage="1d6" tags="blunt cleric onehand"></weapon>
+	<weapon name="Morning Star" armstype="onehand" damage="2d4" tags="blunt cleric onehand"></weapon>
+	<weapon name="Partisan" armstype="onehand" damage="1d6" tags="piercing polearm onehand"></weapon>
+	<weapon name="Pick, Military, Footman's" armstype="onehand" damage="2d4" tags="piercing blunt onehand"></weapon>
+	<weapon name="Pick, Military, Horseman's" armstype="onehand" damage="1d4+1" tags="piercing blunt onehand"></weapon>
+	<weapon name="Pike, awl" armstype="onehand" damage="1d6" tags="piercing polearm onehand"></weapon>
+	<weapon name="Ranseur" armstype="onehand" damage="2d4" tags="piercing polearm onehand"></weapon>
+	<weapon name="Rapier" armstype="onehand" damage="1d6" tags="piercing sword onehand backstab"></weapon>
+	<weapon name="Scimitar" armstype="onehand" damage="1d8" tags="slashing onehand"></weapon>
+	<weapon name="Sling, Bullets" armstype="ranged" damage="1d4+1" tags="ranged ammo sling"></weapon>
+	<weapon name="Spear" armstype="twohand" damage="1d6" tags="piercing polearm onehand"></weapon>
+	<weapon name="Spetum" armstype="onehand" damage="2d4" tags="piercing polearm onehand"></weapon>
+	<weapon name="Staff, Quarter" armstype="onehand" damage="1d6" tags="blunt polearm onehand cleric monk"></weapon>
+	<weapon name="Sword, Bastard" armstype="twohand" damage="2d4" tags="slashing sword onehand twohand"></weapon>
+	<weapon name="Sword, Broad" armstype="onehand" damage="2d4" tags="slashing sword onehand"></weapon>
+	<weapon name="Sword, Long" armstype="onehand" damage="1d8" tags="slashing sword onehand"></weapon>
+	<weapon name="Sword, Short" armstype="onehand" damage="1d6" tags="slashing sword onehand"></weapon>
+	<weapon name="Sword, Two-Handed" armstype="twohand" damage="1d10" tags="slashing sword twohand"></weapon>
+	<weapon name="Throwing Knife" armstype="thrown" damage="1d4" tags="thrown knife piercing"></weapon>
+	<weapon name="Trident" armstype="onehand" damage="2d4" tags="piercing polearm onehand"></weapon>
+	<weapon name="Voulge" armstype="onehand" damage="2d4" tags="slashing piercing polearm onehand"></weapon>
+</weapons>

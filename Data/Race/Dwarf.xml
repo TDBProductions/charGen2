@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<race name="Dwarf">
+	<abilitycaps>
+		<abilitycapsmale>
+			<ability name="Strength" min="8" max="18"></ability>
+			<ability name="Intelligence" min="3" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="3" max="17"></ability>
+			<ability name="Constitution" min="12" max="19"></ability>
+			<ability name="Charisma" min="3" max="16"></ability>
+		</abilitycapsmale>
+		
+		<abilitycapsfemale>
+			<ability name="Strength" min="8" max="17"></ability>
+			<ability name="Intelligence" min="3" max="18"></ability>
+			<ability name="Wisdom" min="3" max="18"></ability>
+			<ability name="Dexterity" min="3" max="17"></ability>
+			<ability name="Constitution" min="12" max="19"></ability>
+			<ability name="Charisma" min="3" max="16"></ability>
+		</abilitycapsfemale>
+	</abilitycaps>
+	
+	<abilitybonus>
+		<ability name="Strength" value="1"></ability>
+		<ability name="Charisma" value="-1"></ability>
+	</abilitybonus>
+		
+	<racefeatures>
+		<feature name="Infravision" description="See up to 60' in darkness"></feature>
+		<feature name="Stone Sense" description="Ability to detect phenomena in the stone"></feature>
+		<feature name="Small Stature" description="-4 to hit when attacked by Ogres, Trolls, Giants, or Titans"></feature>
+		<feature name="Favored Target" description="+1 to hit Half-Orcs, Goblins, Hobgoblins or Orcs"></feature>
+		<feature name="Nonlinguistic" description="Unable to learn more than two additional languages">
+			<affectedStat name="Language">
+				<condition effect="SetCap" value="2"></condition>
+			</affectedStat>
+			</feature>
+	</racefeatures>
+	
+	<languages>
+		<language name="Dwarven"></language>
+		<language name="Gnome"></language>
+		<language name="Goblin"></language>
+		<language name="Kobold"></language>
+		<language name="Orcish"></language>
+		<language name="Common"></language>
+	</languages>
+	
+	<mheight value="48" minus="1d4" plus="1d6" oweight="81" uweight="15"></mheight>
+	<mweight value="150" minus="2d8" plus="2d12" oweight="61" uweight="20"></mweight>
+	<fheight value="46" minus="1d4" plus="1d4" oweight="81" uweight="15"></fheight>
+	<fweight value="120" minus="2d8" plus="2d10" oweight="61" uweight="20"></fweight>
+	
+	<racialsavebonus>
+		<!-- In order to make these fit waaaay better, it is given in an array format from 3-18 -->
+		<save name="Poison" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+		<save name="Wand" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+		<save name="Spell" value="0 -1 -1 -1 -2 -2 -2 -2 -3 -3 -3 -4 -4 -4 -4 -5"></save>
+	</racialsavebonus>
+	
+	<racialthiefbonus>
+		<stat name="Locks" value="10"></stat>
+		<stat name="Traps" value="15"></stat>
+		<stat name="Climb" value="-10"></stat>
+		<stat name="Read" value="-5"></stat>
+	</racialthiefbonus>
+	
+</race>
